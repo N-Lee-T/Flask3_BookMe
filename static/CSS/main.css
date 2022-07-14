@@ -14,9 +14,18 @@ h2 {
     color: #433520;
 }
 
+h4 {
+    font-family: 'Helvetica';
+    color: #f8b400;
+}
+
 h6 {
     font-family: 'Helvetica';
     color: #f8b400;
+}
+
+a {
+    color: #de7719;
 }
 
 th {
@@ -73,8 +82,34 @@ table {
     padding-bottom: 15%;
 }
 
+/* Buttons  */
+
 .subbutton {
     background-color: #de7719;
     color: #433520;
-    font-family: 'Fredoka';
+    font-family: 'Helvetica';
 }
+
+.subbutton:hover {
+    background: #f8b400;
+    text-decoration: none;
+  }
+
+/* Bottom of pages  */
+
+.bottom-container {
+    align-items: center;
+    text-align: center;
+    background-color: #433520;
+    color: #f8b400;
+    padding: 10%;
+  }
+
+.links-list {
+    color: #f8b400;
+    font-family: 'Helvetica';
+    font-size: 1rem;
+    padding: 5%;
+    padding-bottom: 5%;
+  }
+

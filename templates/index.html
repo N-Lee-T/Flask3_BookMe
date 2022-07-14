@@ -15,11 +15,11 @@
             <h1>Book me!</h1>
         </div>
         <div class="top-text col-lg-6">
-            <h6> There are already far too many interesting books to get through in one lifetime, but that's never stopped me.
-                Check out the books that have been recommended, and leave your own suggestion(s)! </h6>
+            <h4> There are already far too many interesting books to get through in one lifetime, but that's never stopped me.
+                Check out the books that have been recommended, and leave your own suggestion(s)! </h4>
             <br>
             <br>
-            <h6> If you need to edit your suggestion or see a typo in a book entry, feel free to correct it. That's what the button's for, after all. </h6>
+            <h4> If you need to edit your suggestion or see a typo in a book entry, feel free to correct it. That's what the button's for, after all. </h4>
         </div>
     </div>  
 
@@ -28,22 +28,6 @@
     <div class="row no-books">
         <h2> Looks like no one has recommended a book yet. Be the first! </h2>
     </div>
-<!-- 
-    <div class="booklist">
-        <table>
-            <thead>
-                <tr>
-                    <th>Title</th>
-                    <th>Author</th>
-                    <th>Genre</th>
-                    <th>Your Initials</th>
-                    <th>Date Added </th>
-                    <th>Was read?</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-        </table>
-    </div> -->
 
     {% else %} 
 
@@ -56,7 +40,7 @@
                     <th>Genre</th>
                     <th>Your Initials</th>
                     <th>Date Added </th>
-                    <th>Was read?</th>
+                    <!-- <th>Was read?</th> -->
                     <th>Actions</th>
                 </tr>
             </thead>
@@ -68,10 +52,12 @@
                 <td>{{ book.genre }}</td> 
                 <td>{{ book.initials }}</td>
                 <td>{{ book.date }}</td>
-                <!-- Change this to a checkbox  -->
-                <td> </td>
+                <!-- Do we need this checkbox?  -->
+                <!-- <td> 
+                    <input class="form-check-input mt-0" type="checkbox"></input>
+                </td> -->
                 <td>
-                    <a href="/delete/{{book.id}}"> Delete me :( </a>
+                    <a href="/delete/{{book.id}}"> Delete book </a>
                     <br>
                     <a href="/edit/{{book.id}}"> Edit book </a>
                 </td>

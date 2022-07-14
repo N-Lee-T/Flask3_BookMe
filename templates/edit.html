@@ -9,16 +9,20 @@
 
 {% block body %}
 
-<div class="content">
-    <h1>Edit my book</h1>
-    <div class="form">
-        <form action="/edit/{{book.id}}" method="POST">
-            <input type="text" name="title" id="title" value="{{book.title}}">
-            <input type="text" name="author" id="author" value="{{book.author}}">
-            <input type="text" name="genre" id="genre" value="{{book.genre}}">
-            <input type="text" name="initials" id="initials" value="{{book.initials}}">
-            <input type="submit" value="Make edits">
-        </form>
+<div class="content headline">
+    <div class="row">
+        <h1>Edit my book</h1>
+    </div>
+    <div class="booklist row">
+        <div class="form">
+            <form action="/edit/{{book.id}}" method="POST">
+                <input type="text" name="title" id="title" value="{{book.title}}">
+                <input type="text" name="author" id="author" value="{{book.author}}">
+                <input type="text" name="genre" id="genre" value="{{book.genre}}">
+                <input type="text" name="initials" id="initials" value="{{book.initials}}">
+                <input type="submit" value="Make edits">
+            </form>
+        </div>
     </div>
 </div>
 
