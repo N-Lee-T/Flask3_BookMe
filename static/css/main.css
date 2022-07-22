@@ -79,12 +79,11 @@ table {
     background-color: #433520;
     margin: 0%;
     padding: 10%;
-
 }
 
 .form1 {
     margin-left: 15%;
-    padding-bottom: 15%;
+    /* padding-bottom: 15%; */
 }
 
 /* Buttons  */
@@ -107,7 +106,7 @@ table {
     text-align: center;
     background-color: #433520;
     color: #f8b400;
-    padding: 10%;
+    padding-top: 0%;
   }
 
 .links-list {

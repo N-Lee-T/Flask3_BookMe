@@ -36,7 +36,10 @@ def index():
 
         # Add to the DB    
         try:
-            db.session.add(new_book)
+            # alternative --> need to research db connex more
+                # cur = db.cursor()
+                # cur.execute("INSERT INTO books (title,author,genre,initials) VALUES (?,?,?,?)", (book_title, book_author, book_genre, inits) )
+            db.session.add(new_book) # does this actually add, though?
             db.session.commit()
             return redirect('/')
         except:
